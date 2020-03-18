@@ -65,7 +65,7 @@ def not_found(error=None):
 def home():
     return render_template('index.html')
 ####
-
+"""maybe use the @login_required method instead?"""
 @app.route('/login', methods=['GET']) 
 def loginG():
     return render_template("login.html",alert="")
