@@ -29,7 +29,8 @@ DATABASE="noprom"
 HOST="localhost"
 PORT="3306"
 SOCKET="/var/run/mysqld/mysqld.sock"
-
+"""maybe also use this? cursorclass=pymysql.cursors.DictCursor much cleaner
+https://stackoverflow.com/questions/51235999/"""
 user_ins = user(username=USERNAME, password=PASSWORD, database=DATABASE,host=HOST ,port=PORT,socket=SOCKET)
 # returns a hash for given function
 def haaash(w):
